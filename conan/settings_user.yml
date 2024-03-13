@@ -1,0 +1,6 @@
+os:
+  baremetal:
+    vendor:
+      null:
+      stm32:
+        board: [ "stm32f103c8" ]
