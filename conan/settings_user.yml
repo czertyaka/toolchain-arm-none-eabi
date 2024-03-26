@@ -3,4 +3,4 @@ os:
     vendor:
       null:
       stm32:
-        board: [ "stm32f103c8" ]
+        board: [ "stm32f103c8", "stm32f411ce" ]
