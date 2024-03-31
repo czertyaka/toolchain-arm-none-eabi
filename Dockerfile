@@ -1,7 +1,7 @@
 FROM alpine:20231219
 
 RUN apk add \
-    cmake=3.28.3-r0 \
+    cmake=3.29.0-r0 \
     g++-arm-none-eabi=13.2.0-r0 \
     gcc-arm-none-eabi=13.2.0-r0 \
     gdb-multiarch=14.2-r0 \
