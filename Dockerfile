@@ -15,5 +15,6 @@ ENV CONAN_HOME=/.conan2
 RUN mkdir /.conan2 && chmod a+w -R /.conan2
 COPY ./conan/ /etc/conan/
 
+WORKDIR /root
 COPY --chmod=0755 entrypoint.sh /usr/local/bin/
 ENTRYPOINT [ "entrypoint.sh" ]
