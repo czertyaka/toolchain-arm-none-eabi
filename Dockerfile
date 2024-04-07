@@ -1,7 +1,9 @@
 FROM alpine:20231219
 
-RUN apk add \
-    cmake=3.29.0-r0 \
+RUN echo "@testing https://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories \
+    && apk add \
+    cmake=3.29.1-r0 \
+    dfu-util@testing=0.11-r1 \
     g++-arm-none-eabi=13.2.0-r0 \
     gcc-arm-none-eabi=13.2.0-r0 \
     gdb-multiarch=14.2-r0 \
